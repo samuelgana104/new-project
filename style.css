@@ -1,0 +1,256 @@
+:root {
+  --Moderate_cyan: hsl(176, 50%, 47%);
+  --Dark_cyan: hsl(176, 72%, 28%);
+  --Black: hsl(0, 0%, 0%);
+  --Dark_gray: hsl(0, 0%, 48%);
+  
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+p {
+  font-size: 16px;
+  color: var(--Dark_gray);
+}
+
+header {
+  background: url("images/image-hero-desktop.jpg") no-repeat;
+  height: 30vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 3em 4em;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+header nav ul li {
+  color: #fff;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+.body {
+  display: block;
+  width: 600px;
+  position: absolute;
+  left: 50%;
+  top: 10em;
+  background-color: #fff;
+  padding: 5em;
+  transform: translateX(-50%);
+  border-radius: 10px;
+}
+.body .logo {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+}
+.bodyp {
+  text-align: center;
+  color: var(--Dark_gray);
+}
+.header {
+  font-size: 29px;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+.butt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0;
+}
+button {
+  padding: 15px 0;
+  width: 150px;
+  text-transform: capitalize;
+  color: #fff;
+  border: none;
+  background-color: var(--Dark_cyan);
+  border-radius: 20px;
+  cursor: pointer;
+}
+.bookmark {
+  display: flex;
+  align-items: center;
+  color: var(--Dark_gray);
+  gap: 10px;
+  border-radius: 30px;
+  background-color: hsl(0, 7%, 86%);
+  padding-right: 20px;
+  text-transform: capitalize;
+}
+.about h2,
+.top h2 {
+  font-size: 1.3em;
+  margin: 10px 0;
+  text-transform: capitalize;
+}
+.about p {
+  margin-top: 20px;
+  line-height: 25px;
+  margin-bottom: 10px;
+}
+.bamboo {
+  padding: 30px;
+  border: 1px solid hsl(0, 0%, 48%);
+  border-radius: 10px;
+  margin: 30px 0;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.top .pledge {
+  color: var(--Moderate_cyan);
+  font-weight: 700;
+}
+.left {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: px;
+}
+.left p {
+  font-size: 2em;
+  font-weight: 800;
+  color: #000;
+}
+.left span {
+  flex: 1;
+  margin-left: 10px;
+  color: var(--Dark_gray);
+}
+.bamboo p {
+  line-height: 25px;
+}
+.complete {
+  display: none;
+  width: 450px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  height: 350px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+}
+.complete h3 {
+  margin-bottom: -50px;
+}
+
+.complete p {
+  text-align: center;
+  line-height: 25px;
+}
+.project {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -20%);
+  width: 600px;
+  padding: 40px;
+  border-radius: 10px;
+  background: #fff;
+}
+.project h3 {
+  font-size: 1.5em;
+}
+
+.project p {
+  font-size: 16px;
+  color: var(--Dark_gray);
+  margin: 20px 0;
+}
+.close {
+  position: absolute;
+  right: 3em;
+  cursor: pointer;
+  top: 30px;
+}
+.content {
+  border: 2px solid hsl(0, 0%, 48%);
+  margin: 20px 0;
+  padding: 20px 20px 20px 70px;
+  border-radius: 10px;
+}
+.content:hover {
+  border: 2px solid hsl(176, 50%, 47%);
+}
+.content .top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+.content .top .pledge {
+  flex: 1;
+  margin-left: 2em;
+}
+.content .top h4 {
+  text-transform: capitalize;
+  font-size: 1.1em;
+}
+.top h4:hover {
+  color: var(--Moderate_cyan);
+}
+.content .top .left {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.content .top .left p {
+  font-size: 2em;
+  font-weight: 800;
+  color: #000;
+}
+.content .top .left span {
+  flex: 1;
+  margin-left: 10px;
+  color: var(--Dark_gray);
+}
+.fund {
+  position: relative;
+  cursor: pointer;
+}
+.fund::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: hsl(0, 0%, 48%) 1px solid;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -50px;
+}
+.fund::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--Moderate_cyan);
+  left: -41px;
+}
+
+.bb {
+  flex: 1;
+}
